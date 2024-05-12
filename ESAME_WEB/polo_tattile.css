@@ -1,0 +1,173 @@
+body {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.navbar {
+    list-style-type: none; /* toglie i pallini dalla lista */
+    text-decoration: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* divide marchio e elementi nav */
+}
+
+.marchio_nav img {
+    width: 200px;
+    padding-left: 10px;
+}
+
+li {
+    display: inline-block; /* mette gli elementi nav in riga */
+    padding-right: 50px;
+}
+
+li a {
+    color: white;
+    text-decoration: none; /* toglie sottolineature da elementi nav */
+    padding: 15px;
+    padding-left: px;
+    margin: 0;
+    font-size: 18pt;
+}
+
+li a:hover { /* cambia il colore quando il mouse passa sopra */
+    background-color: #FF0;
+    color: #000000;
+  }
+
+/* sta parte che segue serve per il dropdown della navbar aree*/
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #FF0;
+    color: #000000;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #FF0;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ /* qua finisce codice navbar */
+
+.landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    padding-left: 50px;
+    background-color: #000000;
+    color: white;
+}
+
+.landing img {
+        object-fit: cover;
+        width: 100%;
+        height: fit-content;
+}
+
+main {
+    display: grid; 
+}
+
+
+/* card aree*/
+.card {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+section.card div {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    border-width: 3px;
+    border-style: solidf;
+    border-color: #000000;
+}
+.card div:hover { /* cambia il colore quando il mouse passa sopra */
+    background-color: #FF0;
+    color: #000000;
+    text-decoration: none;
+/* fine card aree*/
+
+.eventi {
+    color:antiquewhite;
+    background-color: rgb(0, 0, 0);
+}
+
+.visite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.visite img {
+    max-width: 100%;
+    height: auto;
+    }
+
+footer {
+    color: antiquewhite;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.marchio_footer img {
+    object-fit: contain;
+    max-width: 30%;
+    height: auto
+}
