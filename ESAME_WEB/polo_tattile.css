@@ -7,9 +7,19 @@ body {
     padding: 0;
 }
 
+.container {
+	max-width: 1300px; /* o quello che volete */
+	margin: 0 auto; /* per centrare quel contenitore nella pagina */
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin: 0;
     padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 h2 {
@@ -104,6 +114,7 @@ li a, .dropbtn {
     padding-left: 50px;
     background-color: #000000;
     color: white;
+    max-height: fit-content;
 }
 
 .landing img {
@@ -146,6 +157,7 @@ section.card div {
     background-color: #FF0;
     color: #000000;
     text-decoration: none;
+}
 /* fine card aree*/
 
 .eventi {
@@ -160,7 +172,7 @@ section.card div {
 
 .visite img {
     max-width: 100%;
-    height: auto;
+    height:;
     }
 
 footer {
